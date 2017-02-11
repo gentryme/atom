@@ -202,8 +202,6 @@ class AtomEnvironment extends Model
       @getStorageFolder().clear()
       @stateStore.clear()
 
-    @views.initialize()
-
     ConfigSchema.projectHome = {
       type: 'string',
       default: path.join(fs.getHomeDirectory(), 'github'),
