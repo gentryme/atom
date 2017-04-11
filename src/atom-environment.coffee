@@ -786,6 +786,7 @@ class AtomEnvironment extends Model
     @windowEventHandler = null
 
   didChangeStyles: (styleElement) ->
+    TextEditor.didUpdateStyles()
     if styleElement.textContent.indexOf('scrollbar') >= 0
       TextEditor.didUpdateScrollbarStyles()
 
